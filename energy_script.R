@@ -1,0 +1,7 @@
+getwd()
+setwd('C:/Users/user/desktop/github/energy-price')
+nrj <- read.csv('draft/energy_data.csv')
+head(nrj)
+str(nrj)
+write.table(nrj, file = 'data/energy_data.rda')
+save(nrj, file = 'energy_data.Rdata')
